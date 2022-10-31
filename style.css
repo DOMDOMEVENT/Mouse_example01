@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    background-image: url('images/BG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.rock {
+    position: absolute;
+    top: 170px;
+    left: calc(50% - 65px);
+    width: 130px;
+    transform-origin: bottom;
+    transition-duration: 0.3s;
+}
+
+.rock.left {
+    transform: rotate(-30deg);
+}
+
+.rock.right {
+    transform: rotate(30deg);
+}
